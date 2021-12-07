@@ -34,6 +34,27 @@ def main():
     plt.ylabel("Sales per year (millions)")
     plt.legend(loc = 'upper left')
 
+    plt.figure()
+
+    plt.scatter(na_sales.keys(), na_sales.values(), color = 'r', label = "NA Sales")
+    plt.title("Top Selling Video Game Sales Per Year (NA)")
+    plt.xlabel("Year")
+    plt.ylabel("Sales per year (millions)")
+
+    plt.figure()
+
+    plt.scatter(eu_sales.keys(), eu_sales.values(), color = 'g', label = "EU Sales")
+    plt.title("Top Selling Video Game Sales Per Year (EU)")
+    plt.xlabel("Year")
+    plt.ylabel("Sales per year (millions)")
+
+    plt.figure()
+
+    plt.scatter(jp_sales.keys(), jp_sales.values(), color = 'b', label = "JP Sales")
+    plt.title("Top Selling Video Game Sales Per Year (JP)")
+    plt.xlabel("Year")
+    plt.ylabel("Sales per year (millions)")
+
     plt.show()
 
 main()
